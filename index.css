@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+  width: 100%;
+  height: 2000px;
+  background: black;
+  color: white;
+  display: flex;
+  position: absolute;
+}
+.tasks{
+    margin-left: 270px;
+    margin-top: 50px;
+    font-size: 50px;
+}
+.lists{
+    margin-top: 50px;
+    font-size: 50px;
+    color: gray;
+    font-family: 'Inconsolata', monospace;
+
+}
+.text{
+    margin-left: -250px;
+    margin-top: 120px;
+    font-size: 30px;
+    color: lightgray;
+}
+.material-icons{
+    color: blue;
+    font-size: 32px !important;
+    margin-left: 350px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+.icon{
+    font-size: 30px;
+    color: lightgray;
+    cursor: pointer;
+    margin-top: 80px;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.8s, bottom 0.2s;
+    opacity:0;
+    z-index: 1;
+
+}
+
+#popup.active{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    top: 50%;
+    opacity: 1;
+
+}
+.popup p{
+    font-size: 20px;
+    color: red;
+    padding: 10px;
+    margin-top: 20px;
+}
+.popup input{
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(231, 137, 137);
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px rgb(214, 203, 203);
+    margin-bottom: 10px;
+}
+
+.btn1{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    margin-right: 80px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn2{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#back,#icon{
+    display: none;
+    position: absolute;
+
+}
+
+#back{
+    margin-left: 100px;
+    margin-top: 80px;
+    font-size: 40px !important;
+}
+#icon{
+    margin-left: 150px;
+    margin-top: 80px;
+    font-size: 30px;
+}
+#parent{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.child{
+    margin-top: 130px;
+    width: 13vw;
+    height: 40vh;
+    border: 1px solid rgb(156, 36, 56);
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    color: rgb(248, 157, 157);
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2;
+    box-sizing: border-box;
+}
+.delete-button{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(16, 155, 219);
+    border-radius: 50%;
+    margin-top :190px;
+    margin-left :10px;
+    cursor: pointer;
+    padding: 4px;
+    position: absolute;
+
+    
+}
+.add-button{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(241, 14, 14);
+    border-radius: 50%;
+    margin-top :190px;
+    margin-left :50px;
+    cursor: pointer;
+    padding: 4px;
+    position: absolute;
+}
+
+.popup1{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    transition: transform 0.8s, bottom 0.2s;
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    opacity:0;
+    z-index: 2;
+
+}
+#popup1.active1{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    top: 50%;
+    opacity: 1;
+
+}
+.popup1 p{
+    font-size: 20px;
+    color: red;
+    padding: 10px;
+    margin-top: 20px;
+}
+.popup1 input{
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(231, 137, 137);
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px rgb(214, 203, 203);
+    margin-bottom: 10px;
+}
+
+.btn3{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    margin-right: 80px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn4{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#change{
+    outline: none;
+    background: none;
+    color: white;
+    border: 1px solid rgb(113, 113, 224);
+    background-color: rgb(93, 93, 238);
+    border-radius: 15px;
+    padding: 2px;
+    font-size: 10px;
+    margin-left: 15px;
+}
+ul{
+    list-style-type: none;
+    position: absolute;
+}
+li{
+    margin-left: 3px;
+    display: inline-block;
+    margin-left: 40px;
+
+
+}

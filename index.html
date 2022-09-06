@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>TODO APP JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="blur">
+        <!-- <span class="material-icons" id="back">
+            arrow_circle_left
+         </span>
+         <p id="icon">Back</p> -->
+        <h1 class="tasks">Tasks</h1>
+        <h1 class="lists">Lists</h1>
+        <p class="text" id="text-empty">No item in the todo list</p>
+        <span class="material-icons" onclick="toggle()">
+            add_circle
+         </span>
+         <p class="icon" onclick="toggle()">Add Item</p>      
+
+    </div>
+         <div class="popup" id="popup">
+            <p class="text1">Add New List</p>
+            <input type="text" class="input" id="name" name="" placeholder="Add New List"><br>
+            <button type="button" id="push" class="btn1" onclick="addTask()">ADD</button>
+            <button class="btn2"  id="first"onclick="addTask()">CLOSE</button>
+        </div>
+        <div class="popup1" id="popup1">
+            <p class="text1">Add New Item</p>
+            <input type="text" class="input1" id="name1" name="" placeholder="Add New Item"><br>
+            <button type="button"  class="btn3" id="addbtn" onclick="closeTask()">ADD</button>
+            <button class="btn4" id="closebtn" onclick="closeTask()">CLOSE</button>
+        </div>
+        
+    <div id="parent"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
