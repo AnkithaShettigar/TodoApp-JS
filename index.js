@@ -1,10 +1,14 @@
 function toggle(){
     var popup = document.getElementById('popup');
     popup.classList.toggle('active'); 
+    document.getElementsByClassName('container')[0].style.filter = "blur(5px)";
+
     
 }
 function addTask(){
     popup.classList.toggle('active'); 
+    document.getElementsByClassName('container')[0].style.filter = "blur(5px)";
+    
 }
 
 
